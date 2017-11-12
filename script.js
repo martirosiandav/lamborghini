@@ -9,11 +9,19 @@ $(document).ready(function () {
     $('section.section5').find('img').on('click', function () {
         $('html').animate({ scrollTop: 0 }, 'slow');
     });
-    $('a.nav-link').eq(0).on('click', function () {
+    $('a.horizontal').eq(0).on('click', function () {
         let offset = $('section.section2').eq(0).offset();
         $('html').animate({ scrollTop: offset.top }, 'slow');
     });
-    $('a.nav-link').eq(1).on('click', function () {
+    $('a.horizontal').eq(1).on('click', function () {
+        let offset = $('section.section4').eq(0).offset();
+        $('html').animate({ scrollTop: offset.top }, 'slow');
+    });
+    $('a.vertical').eq(0).on('click', function () {
+        let offset = $('section.section2').eq(0).offset();
+        $('html').animate({ scrollTop: offset.top }, 'slow');
+    });
+    $('a.vertical').eq(1).on('click', function () {
         let offset = $('section.section4').eq(0).offset();
         $('html').animate({ scrollTop: offset.top }, 'slow');
     });
@@ -63,4 +71,25 @@ $(document).ready(function () {
             b = true;
         }
     });
+    $('html').on('click', function () {
+        let width = $('div.slide').width();
+        if(width) {
+            $('#button').find('span').eq(0).animate({
+                marginBottom: '6px',
+            }, 250, function () {
+                $(this).css('transform', "rotate(" + 0 + "deg)",)
+            });
+            $('#button').find('span').eq(1).animate({
+                marginBottom: '6px',
+            }, 250, function () {
+                $(this).css('transform', "rotate(" + '0' + "deg)",)
+            });
+            $('#button').find('span').eq(2).animate({
+                opacity: '1',
+            }, 250);
+            $('div.slide').animate({
+                width: 0,
+            }, 600);
+        }
+    })
 });

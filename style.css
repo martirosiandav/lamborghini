@@ -45,9 +45,9 @@ section.section1 {
     opacity: 0;
     background: url("images/Layer 3.png") no-repeat scroll center;
     background-size: cover;
-    height: 84%;
+    height: 85%;
     position: absolute;
-    top: 8%;
+    top: 7.5%;
     left: 3.1%;
     right: 3.1%;
     z-index: 1;
