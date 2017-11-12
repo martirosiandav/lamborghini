@@ -114,10 +114,14 @@ section.section5 {
     background: url("images/Layer 2.png") no-repeat scroll bottom;
     background-size: contain;
     height: 100%;
-    padding-top: 600px;
+    padding-top: 400px;
     position: relative;
 }
 section.section5 > p {
+    padding: 0 8%;
+    width: 100%;
+    position: absolute;
+    bottom: 10%;
     color: #FFFFFF;
     text-align: center;
     font-size: 17px;

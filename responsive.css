@@ -72,6 +72,9 @@
         font-size: 15px;
         width: 75%;
     }
+    section.section5{
+        padding-top: 500px;
+    }
     section.section5 > img {
         top: 25%;
     }
