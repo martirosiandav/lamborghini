@@ -140,7 +140,7 @@ section.section5 > img {
     animation: mouseMove 1s alternate infinite;
 }
 div.slide {
-    position: absolute;
+    position: fixed;
     top: 15%;
     right: 0;
     width: 0;
