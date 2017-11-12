@@ -1,0 +1,148 @@
+body {
+    background-color: black !important;
+    height: 100vh;
+    width: 100%;
+}
+nav.nav-container {
+    position: absolute;
+    right: 10%;
+    left: 10%;
+    top: 7%;
+    width: 80%;
+    transform: translateY(-21px);
+    -webkit-transform: translateY(-21px);
+    -moz-transform: translateY(-21px);
+    -o-transform: translateY(-21px);
+    z-index: 3;
+    font-size: 17px;
+}
+.nav-link {
+    background-color: black;
+    color: white;
+    transition: color 375ms ease;
+}
+.nav-link:hover {
+    color: #585858;
+}
+img.lamborghini {
+    background-color: black;
+    position: absolute;
+    top: 52%;
+    transition: all .4s ease-out;
+    transform: translateY(-49px);
+    -webkit-transform: translateY(-49px);
+    -moz-transform: translateY(-49px);
+    -o-transform: translateY(-49px);
+    cursor: pointer;
+}
+#button {
+    display: none;
+}
+section.section1 {
+    background: url("images/Layer 3.png") no-repeat scroll center;
+    background-size: cover;
+    height: 85%;
+    position: absolute;
+    top: 7.5%;
+    left: 3.1%;
+    right: 3.1%;
+    z-index: 1;
+}
+section.section1 > p {
+    color: #FFFFFF;
+    font-size: 32px;
+    position: relative;
+    top: 24%;
+    text-align: center;
+    letter-spacing: 18px;
+    transition: all .4s ease-out;
+}
+section.section2 {
+    background: url("images/logo-aventador.png") no-repeat scroll center 10%;
+    background-size: 30%;
+    height: 100%;
+    position: relative;
+    padding-left: 2%;
+    transition: all .4s ease-out;
+}
+section.section2 > p {
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 17px;
+    width: 50%;
+    position: absolute;
+    top: 49%;
+    transition: all .4s ease-out;
+}
+section.section3 {
+    background: url("images/Layer 0.png") no-repeat scroll right 80%;
+    background-size: 45%;
+    height: 100%;
+    transition: all .4s ease-out;
+}
+section.section4 {
+    background: url("images/5lVOf61.png") no-repeat scroll center top;
+    background-size: contain;
+    height: 100%;
+    padding-top: 33%;
+}
+section.section4 > p:first-child {
+    color: #FFFFFF;
+    font-size: 32px;
+    letter-spacing: 18px;
+    text-align: center;
+    margin-bottom: 8%;
+    transition: all .4s ease-out;
+}
+section.section4 > p:nth-child(2) {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all .4s ease-out;
+}
+section.section5 {
+    background: url("images/Layer 2.png") no-repeat scroll bottom;
+    background-size: contain;
+    height: 100%;
+    padding-top: 600px;
+    position: relative;
+}
+section.section5 > p {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all .4s ease-out;
+}
+section.section5 > img {
+    cursor: pointer;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    animation: mouseMove 1s alternate infinite;
+}
+div.slide {
+    position: absolute;
+    top: 15%;
+    right: 0;
+    width: 0;
+    overflow: hidden;
+    background-color: black;
+    z-index: 2;
+}
+@keyframes mouseMove {
+    from {
+        top: 25%;
+    }
+    to {
+        top: 20%;
+    }
+}
