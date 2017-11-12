@@ -10,10 +10,12 @@ $(document).ready(function () {
         $('html').animate({ scrollTop: 0 }, 'slow');
     });
     $('a.nav-link').eq(0).on('click', function () {
-        $('html').animate({ scrollTop: 468 }, 'slow');
+        let offset = $('section.section2').eq(0).offset();
+        $('html').animate({ scrollTop: offset.top }, 'slow');
     });
     $('a.nav-link').eq(1).on('click', function () {
-        $('html').animate({ scrollTop: 930 }, 'slow');
+        let offset = $('section.section4').eq(0).offset();
+        $('html').animate({ scrollTop: offset.top }, 'slow');
     });
     let b = true,
         a = true;
