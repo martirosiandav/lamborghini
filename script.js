@@ -1,7 +1,19 @@
 $(document).ready(function () {
+    $('section.section1').fadeTo('slow', 1);
+    $('section.section2').fadeTo('slow', 1);
+    $('section.section4').fadeTo('slow', 1);
+    $('section.section5').fadeTo('slow', 1);
+    $('img.lamborghini').on('click', function () {
+        $('html').animate({ scrollTop: 0 }, 'slow');
+    });
     $('section.section5').find('img').on('click', function () {
-        $("html").animate({ scrollTop: 0 }, "slow");
-        return false;
+        $('html').animate({ scrollTop: 0 }, 'slow');
+    });
+    $('a.nav-link').eq(0).on('click', function () {
+        $('html').animate({ scrollTop: 468 }, 'slow');
+    });
+    $('a.nav-link').eq(1).on('click', function () {
+        $('html').animate({ scrollTop: 930 }, 'slow');
     });
     let b = true,
         a = true;
