@@ -47,13 +47,14 @@ section.section1 {
     background-size: cover;
     height: 84%;
     position: absolute;
-    top: 8.5%;
+    top: 8%;
     left: 3.1%;
     right: 3.1%;
     z-index: 1;
 }
 section.section1 > p {
     color: #FFFFFF;
+    margin: 0;
     font-size: 32px;
     position: relative;
     top: 24%;
@@ -64,23 +65,24 @@ section.section1 > p {
 section.section2 {
     opacity: 0;
     background: url("images/logo-aventador.png") no-repeat scroll center 10%;
-    background-size: 30%;
+    background-size: 40%;
     height: 100%;
     position: relative;
-    padding-left: 2%;
     transition: all .4s ease-out;
 }
 section.section2 > p {
     color: #FFFFFF;
     text-align: left;
     font-size: 17px;
+    margin: 0;
     width: 50%;
+    left: 3%;
     position: absolute;
-    top: 49%;
+    top: 50%;
     transition: all .4s ease-out;
 }
 section.section3 {
-    background: url("images/Layer 0.png") no-repeat scroll right 80%;
+    background: url("images/Layer 0.png") no-repeat scroll 97% 70%;
     background-size: 45%;
     height: 100%;
     transition: all .4s ease-out;
@@ -90,24 +92,30 @@ section.section4 {
     background: url("images/5lVOf61.png") no-repeat scroll center top;
     background-size: contain;
     height: 100%;
-    padding-top: 33%;
+    position: relative;
 }
-section.section4 > p:first-child {
+section.section4 > p:first-of-type {
     color: #FFFFFF;
     font-size: 32px;
     letter-spacing: 18px;
+    margin: 0;
     text-align: center;
-    margin-bottom: 8%;
     transition: all .4s ease-out;
+    position: absolute;
+    width: 100%;
+    top: 50%;
 }
-section.section4 > p:nth-child(2) {
+section.section4 > p:nth-of-type(2) {
     color: #FFFFFF;
     text-align: center;
     font-size: 17px;
-    width: 65%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 70%;
+    margin:  0;
     transition: all .4s ease-out;
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    top: 62%;
 }
 section.section5 {
     opacity: 0;
@@ -131,7 +139,6 @@ section.section5 > p {
 section.section5 > img {
     cursor: pointer;
     position: absolute;
-    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -150,9 +157,9 @@ div.slide {
 }
 @keyframes mouseMove {
     from {
-        top: 25%;
+        top: 27%;
     }
     to {
-        top: 20%;
+        top: 22%;
     }
 }
