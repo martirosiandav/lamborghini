@@ -3,6 +3,9 @@ body {
     height: 100vh;
     width: 100%;
 }
+::-moz-selection {
+    background: none;
+}
 ::selection {
     background: none;
 }
@@ -22,6 +25,7 @@ nav.nav-container {
 .nav-link {
     background-color: black;
     color: white;
+    -webkit-transition: color 375ms ease;
     transition: color 375ms ease;
 }
 .nav-link:hover {
@@ -31,6 +35,7 @@ img.lamborghini {
     background-color: black;
     position: absolute;
     top: 52%;
+    -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out;
     transform: translateY(-49px);
     -webkit-transform: translateY(-49px);
@@ -60,6 +65,7 @@ section.section1 > p {
     top: 24%;
     text-align: center;
     letter-spacing: 18px;
+    -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out;
 }
 section.section2 {
@@ -68,6 +74,7 @@ section.section2 {
     background-size: 40%;
     height: 100%;
     position: relative;
+    -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out;
 }
 section.section2 > p {
@@ -79,12 +86,14 @@ section.section2 > p {
     left: 3%;
     position: absolute;
     top: 50%;
+    -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out;
 }
 section.section3 {
     background: url("images/Layer 0.png") no-repeat scroll 97% 70%;
     background-size: 45%;
     height: 100%;
+    -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out;
 }
 section.section4 {
@@ -100,6 +109,7 @@ section.section4 > p:first-of-type {
     letter-spacing: 18px;
     margin: 0;
     text-align: center;
+    -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out;
     position: absolute;
     width: 100%;
@@ -111,6 +121,7 @@ section.section4 > p:nth-of-type(2) {
     font-size: 17px;
     width: 70%;
     margin:  0;
+    -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out;
     position: absolute;
     left: 15%;
@@ -134,6 +145,7 @@ section.section5 > p {
     font-size: 17px;
     margin-left: auto;
     margin-right: auto;
+    -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out;
 }
 section.section5 > img {
@@ -144,7 +156,8 @@ section.section5 > img {
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -o-transform: translateX(-50%);
-    animation: mouseMove 1s alternate infinite;
+    -webkit-animation: mouseMove 1s alternate infinite;
+            animation: mouseMove 1s alternate infinite;
 }
 div.slide {
     position: fixed;
@@ -154,6 +167,14 @@ div.slide {
     overflow: hidden;
     background-color: black;
     z-index: 2;
+}
+@-webkit-keyframes mouseMove {
+    from {
+        top: 27%;
+    }
+    to {
+        top: 22%;
+    }
 }
 @keyframes mouseMove {
     from {
